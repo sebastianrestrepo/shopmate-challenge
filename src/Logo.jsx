@@ -16,4 +16,4 @@ const Logo = function (props) {
     </div>;
 }
 
-export default NavBar;
+export default Logo;

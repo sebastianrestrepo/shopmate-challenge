@@ -10562,7 +10562,48 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
-.cls-1 {
+.nav-bar {
+  background-color: #2E2E2E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-bar .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.nav-bar .menu .options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.nav-bar .menu .options a {
+  color: #FFF;
+  text-decoration: none;
+  margin-left: 50px;
+}
+
+#Capa_1 {
+  width: 200px;
+  margin: 20px 0 20px 20px;
+}
+
+#Capa_1 .cls-1 {
   fill: #f62f5e;
 }
 /*# sourceMappingURL=App.css.map */

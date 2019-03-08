@@ -1,3 +1,28 @@
-.cls-1{
-    fill: #f62f5e;
+.nav-bar {
+    background-color: #2E2E2E;
+    display: flex;
+    .menu {
+        display: flex;
+        flex-direction: row;
+        .options {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Montserrat', sans-serif;
+            a {
+                color: #FFF;
+                text-decoration: none;
+                margin-left: 50px;
+            }
+        }
+    }
+}
+
+#Capa_1 {
+    width: 200px;
+    margin: 20px 0 20px 20px;
+
+    .cls-1 {
+        fill: #f62f5e;
+    }
 }
