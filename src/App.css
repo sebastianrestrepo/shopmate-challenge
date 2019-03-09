@@ -10624,6 +10624,15 @@ a.text-dark:hover, a.text-dark:focus {
   padding: 0 6% 0 6%;
 }
 
+.nav-bar #logo {
+  width: 200px;
+  margin: 22px 0 22px 0;
+}
+
+.nav-bar #logo .cls-1 {
+  fill: #f62f5e;
+}
+
 .nav-bar .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10632,6 +10641,12 @@ a.text-dark:hover, a.text-dark:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .nav-bar .menu .options {
@@ -10650,28 +10665,25 @@ a.text-dark:hover, a.text-dark:focus {
 .nav-bar .menu .options a {
   color: #FFF;
   text-decoration: none;
-  margin-left: 70px;
+  margin-right: 70px;
 }
 
-.nav-bar button {
+.nav-bar .nav-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-bar .nav-btns button {
   background: none;
   border: none;
 }
 
-.nav-bar button img {
+.nav-bar .nav-btns button img {
   width: 18px;
 }
 
-.nav-bar #bag-btn img {
+.nav-bar .nav-btns #bag-btn img {
   width: 20px;
-}
-
-#Capa_1 {
-  width: 200px;
-  margin: 22px 0 22px 0;
-}
-
-#Capa_1 .cls-1 {
-  fill: #f62f5e;
 }
 /*# sourceMappingURL=App.css.map */

@@ -5,9 +5,18 @@
     display: flex;
     justify-content: space-between;
     padding: 0 6% 0 6%;
+    #logo {
+        width: 200px;
+        margin: 22px 0 22px 0;
+        .cls-1 {
+            fill: #f62f5e;
+        }
+    }
     .menu {
         display: flex;
         flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
         .options {
             display: flex;
             align-items: center;
@@ -16,33 +25,26 @@
             a {
                 color: #FFF;
                 text-decoration: none;
-                margin-left: 70px;
+                margin-right: 70px;
             }
         }
     }
 
-    button {
-        background: none;
-        border: none;
-
-        img {
-            width: 18px;
+    .nav-btns {
+        display: flex;
+        button {
+            background: none;
+            border: none;
+    
+            img {
+                width: 18px;
+            }
         }
-    }
-
-    #bag-btn {
-        img {
-            width: 20px;
+    
+        #bag-btn {
+            img {
+                width: 20px;
+            }
         }
-    }
-}
-
-//Logo
-#Capa_1 {
-    width: 200px;
-    margin: 22px 0 22px 0;
-
-    .cls-1 {
-        fill: #f62f5e;
     }
 }
