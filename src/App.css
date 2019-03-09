@@ -10562,6 +10562,48 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+.search-box:hover > .search-txt {
+  width: 240px;
+}
+
+.search-box {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 40px;
+  margin: 13px 0 13px 20px;
+  padding: 0 10px 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.search-box .search-txt {
+  width: 0px;
+  border: none;
+  background: none;
+  outline: none;
+  color: #FFF;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+}
+
+.search-box .search-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .nav-bar {
   background-color: #2E2E2E;
   display: -webkit-box;
@@ -10598,9 +10640,22 @@ a.text-dark:hover, a.text-dark:focus {
   margin-left: 50px;
 }
 
+.nav-bar button {
+  background: none;
+  border: none;
+}
+
+.nav-bar button img {
+  width: 18px;
+}
+
+.nav-bar #bag-btn img {
+  width: 20px;
+}
+
 #Capa_1 {
   width: 200px;
-  margin: 20px 0 20px 20px;
+  margin: 22px 0 22px 20px;
 }
 
 #Capa_1 .cls-1 {

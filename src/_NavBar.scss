@@ -1,6 +1,9 @@
+@import '_SearchBox';
+
 .nav-bar {
     background-color: #2E2E2E;
     display: flex;
+
     .menu {
         display: flex;
         flex-direction: row;
@@ -9,6 +12,7 @@
             align-items: center;
             justify-content: center;
             font-family: 'Montserrat', sans-serif;
+
             a {
                 color: #FFF;
                 text-decoration: none;
@@ -16,11 +20,26 @@
             }
         }
     }
+
+    button {
+        background: none;
+        border: none;
+
+        img {
+            width: 18px;
+        }
+    }
+
+    #bag-btn {
+        img {
+            width: 20px;
+        }
+    }
 }
 
 #Capa_1 {
     width: 200px;
-    margin: 20px 0 20px 20px;
+    margin: 22px 0 22px 20px;
 
     .cls-1 {
         fill: #f62f5e;
