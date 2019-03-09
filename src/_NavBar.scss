@@ -3,7 +3,8 @@
 .nav-bar {
     background-color: #2E2E2E;
     display: flex;
-
+    justify-content: space-between;
+    padding: 0 6% 0 6%;
     .menu {
         display: flex;
         flex-direction: row;
@@ -12,11 +13,10 @@
             align-items: center;
             justify-content: center;
             font-family: 'Montserrat', sans-serif;
-
             a {
                 color: #FFF;
                 text-decoration: none;
-                margin-left: 50px;
+                margin-left: 70px;
             }
         }
     }
@@ -37,9 +37,10 @@
     }
 }
 
+//Logo
 #Capa_1 {
     width: 200px;
-    margin: 22px 0 22px 20px;
+    margin: 22px 0 22px 0;
 
     .cls-1 {
         fill: #f62f5e;

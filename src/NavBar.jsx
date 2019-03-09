@@ -3,7 +3,7 @@ import Logo from './Logo';
 import Menu from './Menu';
 
 const NavBar = function (props) {
-    return <div className="nav-bar container-fluid">
+    return <div className="nav-bar">
         <Logo />
         <Menu />
     </div>;

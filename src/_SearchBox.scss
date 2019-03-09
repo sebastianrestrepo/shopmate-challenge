@@ -1,16 +1,23 @@
 .search-box:hover>.search-txt {
-    width: 240px;
+    width: 200px;
+}
+
+.search-box:hover {
+    background: rgba(255, 255, 255, 0.5);
 }
 
 .search-box {
     //transform: translate(-50%, -50%);
-    background: rgba(255, 255, 255, 0.5);
+    background: none;
     border-radius: 40px;
-    margin: 13px 0 13px 20px;
+    margin: 13px 0 13px 0;
     padding: 0 10px 0 10px;
     display: flex;
     flex-direction: row;
-
+    -webkit-transition: all 0.4s ease-in;
+    -moz-transition: all 0.4s ease-in;
+    -o-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
     .search-txt {
         width: 0px;
         border: none;
@@ -18,7 +25,10 @@
         outline: none;
         color: #FFF;
         font-family: 'Open Sans', sans-serif;
-        font-weight: 700;
+        font-size: 15px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
         -webkit-transition: all 0.4s ease-in;
         -moz-transition: all 0.4s ease-in;
         -o-transition: all 0.4s ease-in;

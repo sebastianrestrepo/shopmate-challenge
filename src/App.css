@@ -10563,13 +10563,17 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .search-box:hover > .search-txt {
-  width: 240px;
+  width: 200px;
+}
+
+.search-box:hover {
+  background: rgba(255, 255, 255, 0.5);
 }
 
 .search-box {
-  background: rgba(255, 255, 255, 0.5);
+  background: none;
   border-radius: 40px;
-  margin: 13px 0 13px 20px;
+  margin: 13px 0 13px 0;
   padding: 0 10px 0 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10578,6 +10582,8 @@ a.text-dark:hover, a.text-dark:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
 }
 
 .search-box .search-txt {
@@ -10587,7 +10593,10 @@ a.text-dark:hover, a.text-dark:focus {
   outline: none;
   color: #FFF;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
+  font-size: 15px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
   -webkit-transition: all 0.4s ease-in;
   transition: all 0.4s ease-in;
 }
@@ -10609,6 +10618,10 @@ a.text-dark:hover, a.text-dark:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 6% 0 6%;
 }
 
 .nav-bar .menu {
@@ -10637,7 +10650,7 @@ a.text-dark:hover, a.text-dark:focus {
 .nav-bar .menu .options a {
   color: #FFF;
   text-decoration: none;
-  margin-left: 50px;
+  margin-left: 70px;
 }
 
 .nav-bar button {
@@ -10655,7 +10668,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 #Capa_1 {
   width: 200px;
-  margin: 22px 0 22px 20px;
+  margin: 22px 0 22px 0;
 }
 
 #Capa_1 .cls-1 {
