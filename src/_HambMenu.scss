@@ -1,0 +1,28 @@
+.hamb-menu-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    .hamb-menu {
+        display: flex;
+        background-color: aqua;
+        width: 310px;
+        height: 416px;
+        justify-content: center;
+
+        .hamb-options {
+            display: flex;
+            font-family: 'Montserrat', sans-serif;
+            flex-direction: column;
+            padding: 45px 0 45px 0;
+            align-items: center;
+            justify-content: space-between;
+
+            a {
+                font-size: 18px;
+                color: #2E2E2E;
+                text-decoration: none;
+            }
+        }
+    }
+}

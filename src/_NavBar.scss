@@ -16,10 +16,6 @@
         }
     }
 
-    .hamb-menu {
-        display: none;
-    }
-
     .menu {
         display: flex;
         flex-direction: row;
@@ -57,6 +53,11 @@
                 width: 20px;
             }
         }
+
+        .hamb-menu-btns {
+            display: none;
+        }
+
     }
 }
 
@@ -67,15 +68,36 @@
             display: none;
         }
 
-        .hamb-menu {
-            display: flex;
+        .nav-btns {
+            #bag-btn {
+                display: none;
+            }
 
-            #hamb-btn {
-                padding-left: 25px;
-                img {
-                    width: 35px;
+            .search-box {
+                display: none;
+            }
+
+            .hamb-menu-btns {
+                display: flex;
+
+                #hamb-btn {
+                    padding-left: 25px;
+
+                    img {
+                        width: 35px;
+                    }
+                }
+
+                #x-close-btn {
+                    padding-left: 25px;
+
+                    img {
+                        width: 25px;
+                    }
                 }
             }
         }
+
+        //.nav-bar end
     }
 }
