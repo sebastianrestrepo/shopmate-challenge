@@ -16,6 +16,10 @@
         }
     }
 
+    .hamb-menu {
+        display: none;
+    }
+
     .menu {
         display: flex;
         flex-direction: row;
@@ -61,6 +65,17 @@
     .nav-bar {
         .menu {
             display: none;
+        }
+
+        .hamb-menu {
+            display: flex;
+
+            #hamb-btn {
+                padding-left: 25px;
+                img {
+                    width: 35px;
+                }
+            }
         }
     }
 }
