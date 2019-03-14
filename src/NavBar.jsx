@@ -18,13 +18,13 @@ const NavBar = function (props) {
             </ button>
 
             <div className="hamb-menu-btns">
-                <button id="hamb-btn">
-                    <img src="./assets/hamburger-menu.svg" alt=""></img>
-                </ button>
-
-                <button id="x-close-btn">
-                    <img src="./assets/X-close.svg" alt=""></img>
-                </ button>
+                {(props.showHambMenu)
+                    ? <button onClick={props.onClick} id="x-close-btn">
+                        <img src="./assets/X-close.svg" alt=""></img>
+                    </ button>
+                    : <button onClick={props.onClick} id="hamb-btn">
+                        <img src="./assets/hamburger-menu.svg" alt=""></img>
+                    </ button>}
             </div>
 
         </div>
