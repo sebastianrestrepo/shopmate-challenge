@@ -6,7 +6,7 @@ const SearchBox = function (props) {
             <img src="./assets/search.svg" alt=""></img>
         </ button>
 
-        <input className="search-txt" type="text" name="" placeholder="search anything" />
+        <input className="search-txt" name="" placeholder="search anything" />
     </div>;
 }
 

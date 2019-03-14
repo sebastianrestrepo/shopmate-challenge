@@ -1,5 +1,6 @@
 .search-box:hover>.search-txt {
     width: 200px;
+    cursor: text;
 }
 
 .search-box:hover {
@@ -23,6 +24,7 @@
         border: none;
         background: none;
         outline: none;
+        cursor: none;
         color: #FFF;
         font-family: 'Open Sans', sans-serif;
         font-size: 15px;
