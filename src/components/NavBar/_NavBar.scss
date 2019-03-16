@@ -1,4 +1,4 @@
-@import '_SearchBox';
+@import '../NavBar/_SearchBox';
 
 header {
     .nav-bar {
@@ -43,6 +43,7 @@ header {
             button {
                 background: none;
                 border: none;
+                cursor: pointer;
 
                 img {
                     width: 18px;
@@ -50,6 +51,7 @@ header {
             }
 
             #bag-btn {
+                cursor: pointer;
                 img {
                     width: 20px;
                 }
@@ -63,6 +65,14 @@ header {
 
         //.nav-bar end
     }
+
+   /* .hamb-menu-cont {
+        display: none;
+
+        .hamb-menu {
+            display: none;
+        }
+    }*/
 
     //header end
 }
@@ -89,6 +99,7 @@ header {
 
                     #hamb-btn {
                         padding-left: 25px;
+                        cursor: pointer;
 
                         img {
                             width: 35px;
@@ -97,6 +108,7 @@ header {
 
                     #x-close-btn {
                         padding-left: 25px;
+                        cursor: pointer;
 
                         img {
                             width: 25px;
@@ -107,6 +119,10 @@ header {
 
             //.nav-bar end
         }
+
+        /*.hamb-menu-cont {
+            display: flex;
+        }*/
 
         //header end
     }

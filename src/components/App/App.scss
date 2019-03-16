@@ -1,9 +1,11 @@
-@import '../node_modules/bootstrap/scss/bootstrap';
+//@import '../node_modules/bootstrap/scss/bootstrap';
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans|Playfair+Display:700');
 
-@import '_NavBar';
-@import '_HambMenu';
+@import '../NavBar/_NavBar';
+@import '../NavBar/_HambMenu';
+@import '../Shop/_Shop';
+@import '../Filters/_Filters';
 
 $red: #F62F5E;
 $softgray: #B4B4B4;
@@ -12,3 +14,17 @@ $darkgray: #2E2E2E;
 $white: #FFF;
 
 $montserrat: 'Montserrat', sans-serif;
+
+* {
+    margin:0; 
+    padding:0;
+}
+
+.App{
+    section {
+        background-color: #f7f7f7;
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+    }
+}

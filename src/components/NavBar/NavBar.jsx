@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Logo from './Logo';
-import Menu from './Menu';
-import SearchBox from './SearchBox';
+import Logo from '../NavBar/Logo';
+import Menu from '../NavBar/Menu';
+import SearchBox from '../NavBar/SearchBox';
 import HambMenu from '../NavBar/HambMenu';
 
 import api from '../../utils/api';
@@ -16,7 +16,7 @@ class NavBar extends Component {
         };
 
         let callback = (result) => {
-            console.log('desde App', result);
+            console.log('desde NavBar', result);
             this.setState({ departments: result });
         }
         api.getDepartments(callback);

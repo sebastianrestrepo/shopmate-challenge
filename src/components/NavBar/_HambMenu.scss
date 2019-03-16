@@ -2,11 +2,13 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    position: absolute;
+    right: 0;
 
     .hamb-menu {
         display: flex;
-        background-color: aqua;
-        width: 310px;
+        background-color: rgba(0, 255, 255, 0.8);
+        width: 303px;
         height: 416px;
         justify-content: center;
 
