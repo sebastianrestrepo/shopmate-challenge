@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import NavBar from './NavBar';
-import HambMenu from './HambMenu';
+import NavBar from '../NavBar/NavBar';
+import HambMenu from '../NavBar/HambMenu';
 import './App.css';
 
 class App extends Component {
@@ -21,10 +21,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header>
-          <NavBar onClick={this.handleHambMenu.bind(this)} showHambMenu={this.state.showHambMenu} />
-          {(this.state.showHambMenu)? <HambMenu/> : ""}
-        </header>
+          <NavBar />
       </div>
     );
   }
