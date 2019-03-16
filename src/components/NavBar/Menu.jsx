@@ -1,20 +1,19 @@
 import React, { Component } from 'react';
 
-class Menu extends Component{
+const Menu = function (props) {
 
-    render(){
-        if(!this.props.departments) return <p>Cargando...</p>;
+        if (!props.departments) return <p>Cargando...</p>;
 
-        return <nav>
-            <h1>{this.props.departments.length}</h1>
-            {this.props.departments.map(( dep ) => {
-                return <a key={dep.department_id} 
-                    href={`/department/${dep.name}`}>
-                    {dep.name}
-                </a>;
-            })}
-        </nav>;
-    }
+        return <div className="menu">
+            <div className="options">
+                {props.departments.map((dep) => {
+                    return <a key={dep.department_id}
+                        href={`/department/${dep.name}`}>
+                        {dep.name}
+                    </a>;
+                })}
+            </div>
+        </div>;
 }
 
 export default Menu;

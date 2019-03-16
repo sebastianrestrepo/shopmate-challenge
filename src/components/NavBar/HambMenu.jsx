@@ -1,14 +1,17 @@
 import React, { Component } from 'react';
 
 const HambMenu = function (props) {
+    if (!props.departments) return <p>Cargando...</p>;
+
     return <div className="hamb-menu-cont">
         <div className="hamb-menu">
             <div className="hamb-options">
-                <a href="">Women</a>
-                <a href="">Men</a>
-                <a href="">Kids</a>
-                <a href="">Shoes</a>
-                <a href="">Brands</a>
+                {props.departments.map((dep) => {
+                    return <a key={dep.department_id}
+                        href={`/department/${dep.name}`}>
+                        {dep.name}
+                    </a>;
+                })}
             </div>
         </div>
     </div>;

@@ -4,10 +4,23 @@ import Menu from './Menu';
 import SearchBox from './SearchBox';
 import HambMenu from '../NavBar/HambMenu';
 
+import api from '../../utils/api';
+
 class NavBar extends Component {
     constructor(props) {
         super(props);
-        this.state = { showHambMenu: false };
+
+        this.state = {
+            showHambMenu: false,
+            departments: null
+        };
+
+        let callback = (result) => {
+            console.log('desde App', result);
+            this.setState({ departments: result });
+        }
+        api.getDepartments(callback);
+
     }
 
     handleHambMenu() {
@@ -24,7 +37,7 @@ class NavBar extends Component {
             <header>
                 <div className="nav-bar">
                     <Logo />
-                    <Menu />
+                    <Menu departments={this.state.departments}/>
 
                     <div className="nav-btns">
 
@@ -47,7 +60,9 @@ class NavBar extends Component {
                     </div>
 
                 </div>
-                {(this.state.showHambMenu) ? <HambMenu /> : ""}
+                {(this.state.showHambMenu) 
+                    ? <HambMenu departments={this.state.departments}/> 
+                    : ""}
             </header>);
 
 

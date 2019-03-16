@@ -1,103 +1,115 @@
 @import '_SearchBox';
 
-.nav-bar {
-    background-color: #2E2E2E;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 6% 0 6%;
-
-    #logo {
-        width: 200px;
-        min-width: 170px;
-        margin: 22px 0 22px 0;
-
-        .cls-1 {
-            fill: #f62f5e;
-        }
-    }
-
-    .menu {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-
-        .options {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: 'Montserrat', sans-serif;
-
-            a {
-                color: #FFF;
-                text-decoration: none;
-                margin-right: 70px;
-            }
-        }
-    }
-
-    .nav-btns {
-        display: flex;
-
-        button {
-            background: none;
-            border: none;
-
-            img {
-                width: 18px;
-            }
-        }
-
-        #bag-btn {
-            img {
-                width: 20px;
-            }
-        }
-
-        .hamb-menu-btns {
-            display: none;
-        }
-
-    }
-}
-
-// RESPONSIVE
-@media only screen and (max-width: 1100px) {
+header {
     .nav-bar {
+        background-color: #2E2E2E;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 6% 0 6%;
+
+        #logo {
+            width: 200px;
+            min-width: 170px;
+            margin: 22px 0 22px 0;
+
+            .cls-1 {
+                fill: #f62f5e;
+            }
+        }
+
         .menu {
-            display: none;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+            .options {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: 'Montserrat', sans-serif;
+
+                a {
+                    color: #FFF;
+                    text-decoration: none;
+                    margin-right: 70px;
+                }
+            }
         }
 
         .nav-btns {
-            #bag-btn {
-                display: none;
+            display: flex;
+
+            button {
+                background: none;
+                border: none;
+
+                img {
+                    width: 18px;
+                }
             }
 
-            .search-box {
-                display: none;
+            #bag-btn {
+                img {
+                    width: 20px;
+                }
             }
 
             .hamb-menu-btns {
-                display: flex;
-
-                #hamb-btn {
-                    padding-left: 25px;
-
-                    img {
-                        width: 35px;
-                    }
-                }
-
-                #x-close-btn {
-                    padding-left: 25px;
-
-                    img {
-                        width: 25px;
-                    }
-                }
+                display: none;
             }
+
         }
 
         //.nav-bar end
     }
+
+    //header end
+}
+
+// RESPONSIVE
+@media only screen and (max-width: 1100px) {
+    header {
+        .nav-bar {
+            .menu {
+                display: none;
+            }
+
+            .nav-btns {
+                #bag-btn {
+                    display: none;
+                }
+
+                .search-box {
+                    display: none;
+                }
+
+                .hamb-menu-btns {
+                    display: flex;
+
+                    #hamb-btn {
+                        padding-left: 25px;
+
+                        img {
+                            width: 35px;
+                        }
+                    }
+
+                    #x-close-btn {
+                        padding-left: 25px;
+
+                        img {
+                            width: 25px;
+                        }
+                    }
+                }
+            }
+
+            //.nav-bar end
+        }
+
+        //header end
+    }
+
+    // media query (max-width: 1100px) end
 }
