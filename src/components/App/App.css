@@ -113,6 +113,7 @@ header .nav-bar .menu .options {
 }
 
 header .nav-bar .menu .options button {
+  font-size: 15px;
   font-family: 'Montserrat', sans-serif;
   cursor: pointer;
   background-color: #2E2E2E;
@@ -205,12 +206,14 @@ header .nav-bar .nav-btns .hamb-menu-btns {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: rgba(0, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.4);
   width: 303px;
   height: 416px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-shadow: -1px 1px 1px -1px rgba(0, 0, 0, 0.1);
+  box-shadow: -1px 1px 1px -1px rgba(0, 0, 0, 0.1);
 }
 
 .hamb-menu-cont .hamb-menu .hamb-options {
@@ -231,9 +234,14 @@ header .nav-bar .nav-btns .hamb-menu-btns {
           justify-content: space-between;
 }
 
-.hamb-menu-cont .hamb-menu .hamb-options a {
-  font-size: 18px;
+.hamb-menu-cont .hamb-menu .hamb-options button {
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: none;
   color: #2E2E2E;
+  border: none;
   text-decoration: none;
 }
 

@@ -7,6 +7,7 @@ import HambMenu from './HambMenu';
 import api from '../../utils/api';
 import store from '../../stores/stores';
 import { observer } from 'mobx-react';
+import { observable } from 'mobx';
 
 class NavBar extends Component {
     constructor(props: {}) {
@@ -14,10 +15,10 @@ class NavBar extends Component {
 
     }
 
-    handleHambMenu() {
+    handleHambMenu(show: boolean) {
         console.log('show hamb menu');
         console.log(store.getShowHambMenu());
-        store.setShowHambMenu();
+        store.setShowHambMenu(show);
     }
 
     render() {
@@ -38,12 +39,14 @@ class NavBar extends Component {
                         </ button>
 
                         <div className="hamb-menu-btns">
+                        {/*store.setShowHambMenu()*/}
                             {(store.getShowHambMenu())
                                 ?
-                                <button onClick={() => {this.handleHambMenu(); console.log('lmao true');} } id="x-close-btn">
+                                <button onClick={() => {this.handleHambMenu(false); console.log('lmao true');} } id="x-close-btn">
                                     <img src="./assets/X-close.svg" alt=""></img>
                                 </ button> 
-                                : <button onClick={() => {this.handleHambMenu(); console.log('lmao false');} } id="hamb-btn">
+                                :
+                                <button onClick={() => {this.handleHambMenu(true); console.log('lmao false');} } id="hamb-btn">
                                     <img src="./assets/hamburger-menu.svg" alt=""></img>
                                 </ button>}
                         </div>

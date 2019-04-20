@@ -9,12 +9,13 @@ class Store {
 
     @observable showHambMenu: boolean = false;
 
-    @action getShowHambMenu() {
+    @observable getShowHambMenu() {
         return this.showHambMenu;
     }
 
-    @action setShowHambMenu() {
-        this.showHambMenu = !this.showHambMenu;
+    @action setShowHambMenu(show: boolean) {
+        this.showHambMenu = show;
+        console.log('exdi');
     }
 
     @observable departments: depsArray | null = null;
