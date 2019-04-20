@@ -239,7 +239,6 @@ header .nav-bar .nav-btns .hamb-menu-btns {
   font-family: 'Montserrat', sans-serif;
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0.4);
-  border: none;
   color: #2E2E2E;
   border: none;
   text-decoration: none;
@@ -254,31 +253,82 @@ header .nav-bar .nav-btns .hamb-menu-btns {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  padding: 20px;
+  margin: 0 20px 0 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #FFF;
 }
 
 .shop h3 {
   font-family: 'Open Sans', sans-serif;
   color: #2E2E2E;
+  margin: 15px 0 15px 0;
 }
 
-.filters {
+.filt-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.filt-section .filt-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-color: #FAFAFA;
   width: 200px;
-  height: 121px;
   -webkit-box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.1);
   padding: 20px;
 }
 
-.filters h3 {
+.filt-section .filt-title h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-family: 'Open Sans', sans-serif;
   color: #2E2E2E;
   font-size: 14px;
+}
+
+.filt-section .filters {
+  background-color: white;
+  -webkit-box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.filt-section .filters h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Open Sans', sans-serif;
+  color: #6C6C6C;
+  font-size: 14px;
+  margin: 10px 0 15px 0;
+}
+
+.filt-section .filters .box-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.filt-section .filters .box-btns button {
+  background-color: #e2e2e2;
+  color: #2E2E2E;
+  border: none;
+  border-radius: 2px;
+  padding: 5px;
+  margin: 0 5px 0 5px;
 }
 
 * {
