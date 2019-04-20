@@ -4,9 +4,14 @@ import Filters from '../Filters/Filters';
 import Shop from '../Shop/Shop';
 import './App.css';
 
+import api from '../../utils/api';
+import store from '../../stores/stores';
+import { observer } from 'mobx-react';
+
 class App extends Component {
-  constructor(props) {
+  constructor(props: {}) {
     super(props);
+    store.getDepartments();
   }
 
   render() {
@@ -22,4 +27,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default observer(App);
