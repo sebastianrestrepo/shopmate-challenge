@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import NavBar from '../NavBar/NavBar';
 import Filters from '../Filters/Filters';
-import Shop from '../Shop/Shop';
+import ProductsStore from '../ProductsStore/ProductsStore';
+import Footer from '../Footer/Footer';
 import './App.css';
 
 import api from '../../utils/api';
@@ -20,8 +21,9 @@ class App extends Component {
           <NavBar />
           <section>
           <Filters />
-          <Shop />
+          <ProductsStore />
           </section>
+          <Footer />
       </div>
     );
   }

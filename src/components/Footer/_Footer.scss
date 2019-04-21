@@ -1,0 +1,43 @@
+footer {
+    background-color: #2E2E2E;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 20px;
+
+        .options {
+            width: 300px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            font-family: 'Montserrat', sans-serif;
+            align-items: space-between;
+
+            button {
+                font-size: 16px;
+                font-family: 'Montserrat', sans-serif;
+                cursor: pointer;
+                background-color: #2E2E2E;
+                border: none;
+                color: #FFF;
+                text-decoration: none;
+                //margin-right: 70px;
+            }
+        }
+    }
+
+    h4 {
+        font-family: 'Open Sans', sans-serif;
+        color: #6C6C6C;
+        font-size: 14px;
+    }
+
+}

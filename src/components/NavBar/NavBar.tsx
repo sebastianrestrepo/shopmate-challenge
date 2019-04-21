@@ -7,7 +7,6 @@ import HambMenu from './HambMenu';
 import api from '../../utils/api';
 import store from '../../stores/stores';
 import { observer } from 'mobx-react';
-import { observable } from 'mobx';
 
 class NavBar extends Component {
     constructor(props: {}) {
